@@ -10,16 +10,23 @@ namespace CSGradeBook
     {
         static void Main(string[] args)
         {
-            Gradebook book = new Gradebook();
-            book.AddGrade(96);
-            book.AddGrade(26.4f);
-            book.AddGrade(95);
+            Gradebook g1 = new Gradebook();
+            Gradebook g2 = g1;
 
-            GradeStatistics stats = book.ComputeStatistics();
+            g1 = new Gradebook();
+            g1.Name = "iftys Grade Book";
+            Console.WriteLine(g2.Name);
 
-            Console.WriteLine("The Average Grade is: " + stats.AverageGrade);
-            Console.WriteLine("The Highest Grade is: " + stats.HighestGrade);
-            Console.WriteLine("The Lowest Grade is: " + stats.LowestGrade);
+            //Gradebook book = new Gradebook();
+            //book.AddGrade(96);
+            //book.AddGrade(26.4f);
+            //book.AddGrade(95);
+
+            //GradeStatistics stats = book.ComputeStatistics();
+
+            //Console.WriteLine("The Average Grade is: " + stats.AverageGrade);
+            //Console.WriteLine("The Highest Grade is: " + stats.HighestGrade);
+            //Console.WriteLine("The Lowest Grade is: " + stats.LowestGrade);
         }
     }
 }

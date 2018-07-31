@@ -8,6 +8,8 @@ namespace CSGradeBook
 {
     public class Gradebook
     {
+        public string Name;
+
         List<float> grades = new List<float>();
 
         public void AddGrade(float grade)
@@ -24,6 +26,7 @@ namespace CSGradeBook
             {
                 stats.HighestGrade = Math.Max(grade, stats.HighestGrade);
                 stats.LowestGrade = Math.Min(grade, stats.LowestGrade);
+                sum = sum += grade;
             }
 
             stats.AverageGrade = sum / grades.Count;

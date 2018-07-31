@@ -1,1 +1,5 @@
 c:\users\mohammediftekhar\documents\visual studio 2015\Projects\CSGradeBook\CSGradeBook\bin\Debug\CSGradeBook.exe.config
+c:\users\mohammediftekhar\documents\visual studio 2015\Projects\CSGradeBook\CSGradeBook\bin\Debug\CSGradeBook.exe
+c:\users\mohammediftekhar\documents\visual studio 2015\Projects\CSGradeBook\CSGradeBook\bin\Debug\CSGradeBook.pdb
+c:\users\mohammediftekhar\documents\visual studio 2015\Projects\CSGradeBook\CSGradeBook\obj\Debug\CSGradeBook.exe
+c:\users\mohammediftekhar\documents\visual studio 2015\Projects\CSGradeBook\CSGradeBook\obj\Debug\CSGradeBook.pdb

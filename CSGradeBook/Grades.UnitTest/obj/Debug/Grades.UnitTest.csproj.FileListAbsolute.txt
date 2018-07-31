@@ -1,0 +1,7 @@
+c:\users\mohammediftekhar\documents\visual studio 2015\Projects\CSGradeBook\Grades.UnitTest\bin\Debug\Grades.UnitTest.dll
+c:\users\mohammediftekhar\documents\visual studio 2015\Projects\CSGradeBook\Grades.UnitTest\bin\Debug\Grades.UnitTest.pdb
+c:\users\mohammediftekhar\documents\visual studio 2015\Projects\CSGradeBook\Grades.UnitTest\bin\Debug\CSGradeBook.exe
+c:\users\mohammediftekhar\documents\visual studio 2015\Projects\CSGradeBook\Grades.UnitTest\bin\Debug\CSGradeBook.pdb
+c:\users\mohammediftekhar\documents\visual studio 2015\Projects\CSGradeBook\Grades.UnitTest\obj\Debug\Grades.UnitTest.csprojResolveAssemblyReference.cache
+c:\users\mohammediftekhar\documents\visual studio 2015\Projects\CSGradeBook\Grades.UnitTest\obj\Debug\Grades.UnitTest.dll
+c:\users\mohammediftekhar\documents\visual studio 2015\Projects\CSGradeBook\Grades.UnitTest\obj\Debug\Grades.UnitTest.pdb
