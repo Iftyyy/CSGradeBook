@@ -8,10 +8,6 @@ namespace Grades.UnitTest.Types
     [TestClass]
     public class TypeTest
     {
-        private void AddGrades(float[] grades)
-        {
-            grades[1] = 89.1f;
-        }
         [TestMethod]
         public void UsingArrays()
         {
@@ -22,6 +18,10 @@ namespace Grades.UnitTest.Types
 
             Assert.AreEqual(89.1f, grades[1]);
         }
+        private void AddGrades(float[] grades)
+        {
+            grades[1] = 89.1f;
+        }
 
         [TestMethod]
         public void UpperCaseToString()
@@ -30,7 +30,7 @@ namespace Grades.UnitTest.Types
             name = name.ToUpper();
             Assert.AreEqual("IFTY", name);
         }
-        
+
         [TestMethod]
         public void AddDaysToDateTime()
         {
@@ -39,10 +39,6 @@ namespace Grades.UnitTest.Types
             Assert.AreEqual(1, date.Day);
         }
 
-        private void IncrementNumber(int number)
-        {
-            number += 1;
-        }
         [TestMethod]
         public void ValueTypesPassByValue()
         {
@@ -50,11 +46,11 @@ namespace Grades.UnitTest.Types
             IncrementNumber(x);
             Assert.AreEqual(39, x);
         }
-
-        private void GiveBookAName(Gradebook book)
+        private void IncrementNumber(int number)
         {
-            book.Name = "A Gradebook";
+            number += 1;
         }
+
         [TestMethod]
         public void ReferenceTypePassByValue()
         {
@@ -63,7 +59,10 @@ namespace Grades.UnitTest.Types
 
             GiveBookAName(book2);
             Assert.AreEqual("A Gradebook", book1.Name);
-
+        }
+        private void GiveBookAName(Gradebook book)
+        {
+            book.Name = "A Gradebook";
         }
 
         [TestMethod]
@@ -82,7 +81,7 @@ namespace Grades.UnitTest.Types
             int x1 = 100;
             int x2 = 64;
 
-            x1 = 4; 
+            x1 = 4;
             Assert.AreNotEqual(x1, x2);
         }
 

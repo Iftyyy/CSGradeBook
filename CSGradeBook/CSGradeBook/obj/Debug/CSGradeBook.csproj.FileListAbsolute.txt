@@ -3,3 +3,5 @@ c:\users\mohammediftekhar\documents\visual studio 2015\Projects\CSGradeBook\CSGr
 c:\users\mohammediftekhar\documents\visual studio 2015\Projects\CSGradeBook\CSGradeBook\bin\Debug\CSGradeBook.pdb
 c:\users\mohammediftekhar\documents\visual studio 2015\Projects\CSGradeBook\CSGradeBook\obj\Debug\CSGradeBook.exe
 c:\users\mohammediftekhar\documents\visual studio 2015\Projects\CSGradeBook\CSGradeBook\obj\Debug\CSGradeBook.pdb
+c:\users\mohammediftekhar\documents\visual studio 2015\Projects\CSGradeBook\CSGradeBook\obj\Debug\CSGradeBook.csprojResolveAssemblyReference.cache
+C:\Users\mohammediftekhar\Documents\Visual Studio 2015\Projects\CSGradeBook\CSGradeBook\obj\Debug\CSGradeBook.csproj.CoreCompileInputs.cache

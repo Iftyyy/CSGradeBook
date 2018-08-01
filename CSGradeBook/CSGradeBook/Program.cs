@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,23 +12,38 @@ namespace CSGradeBook
     {
         static void Main(string[] args)
         {
-            Gradebook g1 = new Gradebook();
-            Gradebook g2 = g1;
+            Gradebook book = new Gradebook();
 
-            g1 = new Gradebook();
-            g1.Name = "iftys Grade Book";
-            Console.WriteLine(g2.Name);
+            book.NameChanged += OnNameChanged;
 
-            //Gradebook book = new Gradebook();
-            //book.AddGrade(96);
-            //book.AddGrade(26.4f);
-            //book.AddGrade(95);
+            book.Name = "Iftys Grade Book";
+            book.Name = "Grade Book";
 
-            //GradeStatistics stats = book.ComputeStatistics();
+            book.AddGrade(96);
+            book.AddGrade(26.4f);
+            book.AddGrade(95);
 
-            //Console.WriteLine("The Average Grade is: " + stats.AverageGrade);
-            //Console.WriteLine("The Highest Grade is: " + stats.HighestGrade);
-            //Console.WriteLine("The Lowest Grade is: " + stats.LowestGrade);
+            GradeStatistics stats = book.ComputeStatistics();
+            Console.WriteLine(book.Name);
+            WriteResult("Average", stats.AverageGrade);
+            WriteResult("Highest", (int)stats.HighestGrade);
+            WriteResult("Lowest", stats.LowestGrade);
+        }
+        /// <summary>
+        /// static methods that display text regarding the gradebook and results
+        /// </summary>
+        private static void OnNameChanged(object sender, NamedChangedEventArgs args)
+        {
+            Console.WriteLine($"Gradebook changing name from {args.ExistingName} to {args.NewName}");
+        }
+        private static void WriteResult(string description, int result)
+        {
+            // string interpolation
+            Console.WriteLine($"{description}: {result:F2}");
+        }
+        private static void WriteResult(string description, float result)
+        {
+            Console.WriteLine($"{description}: {result:F2}");
         }
     }
 }
