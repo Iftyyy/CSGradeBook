@@ -55,6 +55,7 @@
     <Compile Include="GradebookTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Types\ReferenceTypeTest.cs" />
+    <Compile Include="LetterGradeTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CSGradeBook\CSGradeBook.csproj">

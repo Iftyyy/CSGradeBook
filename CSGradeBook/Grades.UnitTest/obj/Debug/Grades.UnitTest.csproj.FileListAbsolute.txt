@@ -5,3 +5,6 @@ c:\users\mohammediftekhar\documents\visual studio 2015\Projects\CSGradeBook\Grad
 c:\users\mohammediftekhar\documents\visual studio 2015\Projects\CSGradeBook\Grades.UnitTest\obj\Debug\Grades.UnitTest.csprojResolveAssemblyReference.cache
 c:\users\mohammediftekhar\documents\visual studio 2015\Projects\CSGradeBook\Grades.UnitTest\obj\Debug\Grades.UnitTest.dll
 c:\users\mohammediftekhar\documents\visual studio 2015\Projects\CSGradeBook\Grades.UnitTest\obj\Debug\Grades.UnitTest.pdb
+C:\Users\mohammediftekhar\Documents\Visual Studio 2015\Projects\CSGradeBook\Grades.UnitTest\bin\Debug\CSGradeBook.exe.config
+C:\Users\mohammediftekhar\Documents\Visual Studio 2015\Projects\CSGradeBook\Grades.UnitTest\obj\Debug\Grades.UnitTest.csproj.CoreCompileInputs.cache
+C:\Users\mohammediftekhar\Documents\Visual Studio 2015\Projects\CSGradeBook\Grades.UnitTest\obj\Debug\Grades.UnitTest.csproj.CopyComplete
