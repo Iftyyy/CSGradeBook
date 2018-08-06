@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -7,24 +8,29 @@ using System.Threading.Tasks;
 
 namespace CSGradeBook
 {
-    public class Gradebook
+    public class Gradebook : GradeTracker
     {
-        private readonly List<float> _grades;
+        public override IEnumerator GetEnumerator()
+        {
+            return _grades.GetEnumerator();
+        }
+
+        protected readonly List<float> _grades;
         public Gradebook()
         {
             _name = "Empty";
             _grades = new List<float>();
         }
-        
+
         /// <summary>
         /// Adds a grade to the gradebook object
         /// </summary>
         /// <param name="grade"></param>
-        public void AddGrade(float grade)
+        public override void AddGrade(float grade)
         {
             _grades.Add(grade);
         }
-        public void WriteGrades(TextWriter destination)
+        public override void WriteGrades(TextWriter destination)
         {
             for (int i = _grades.Count; i > 0; i--)
             {
@@ -36,7 +42,7 @@ namespace CSGradeBook
         /// Calculates the Highest, Lowest and Average grade of the Gradebook
         /// </summary>
         /// <returns></returns>
-        public GradeStatistics ComputeStatistics()
+        public override GradeStatistics ComputeStatistics()
         {
             GradeStatistics stats = new GradeStatistics();
 
@@ -52,37 +58,5 @@ namespace CSGradeBook
             stats.AverageGrade = sum / _grades.Count;
             return stats;
         }
-
-        /// <summary>
-        /// Name event where name is verified and name is changed
-        /// </summary>
-        private string _name;
-        public string Name
-        {
-            get
-            {
-                return _name;
-            }
-            set
-            {
-                if (string.IsNullOrEmpty(value))
-                {
-                    throw new ArgumentException("Name cannot be null or empty");
-                }
-
-                if (_name != value && NameChanged != null)
-                {
-                    NamedChangedEventArgs args = new NamedChangedEventArgs
-                    {
-                        ExistingName = _name,
-                        NewName = value
-                    };
-
-                    NameChanged(this, args);
-                }
-                _name = value;
-            }
-        }
-        public event NameChangeDelegate NameChanged;
     }
 }
